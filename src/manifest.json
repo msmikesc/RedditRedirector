@@ -1,22 +1,20 @@
 {
-  "manifest_version": 2,
-
+  "manifest_version": 3,
   "name": "Reddit Redirector",
   "description": "Reddit Redirector",
-  "version": "1.1",
-  
-  "background": {
-    "scripts": ["redditredirector.js"],
-    "persistent": false
+  "version": "1.2",
+  "action": {
+    "default_icon": {
+      "16": "reddit-16x16.png"
+    }
   },
-  
-  "omnibox": { "keyword" : "r" },
-        "icons": {
-          "16": "reddit-16x16.png"
-        },
-  
-  "permissions": [
-    "tabs"
-  ]
-  
+  "background": {
+    "service_worker": "redditredirector.js"
+  },
+  "icons": {
+    "16": "reddit-16x16.png"
+  },
+  "omnibox": {
+    "keyword": "r"
+  }
 }
