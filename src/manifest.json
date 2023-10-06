@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reddit Redirector",
+  "description": "Reddit Redirector",
+  "version": "1.1",
+  
+  "background": {
+    "scripts": ["redditredirector.js"],
+    "persistent": false
+  },
+  
+  "omnibox": { "keyword" : "r" },
+        "icons": {
+          "16": "reddit-16x16.png"
+        },
+  
+  "permissions": [
+    "tabs"
+  ]
+  
+}
